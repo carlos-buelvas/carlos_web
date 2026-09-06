@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos — Educación & Formación Académica</title>
+  <meta name="description" content="Formación académica de Carlos. Estudiante de Ingeniería de Software desde 2025 en curso.">
+  <meta name="keywords" content="Educación, Carlos, Ingeniería de Software, Universidad, Programación, SQL, HTML, CSS">
+  <meta name="author" content="Carlos">
+  
+  <!-- Hojas de estilo globales -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Lógica principal -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- =========================================================================
+      Encabezado y barra de navegación fija
+       ========================================================================= -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Carlos.dev - Inicio">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        Carlos<span>.dev</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="educacion.html" class="nav-link active">Educación</a></li>
+          <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
+          <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon" id="theme-toggle" type="button" aria-label="Cambiar tema claro u oscuro" title="Cambiar tema">
+          <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="7" r="4"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="btn btn-secondary btn-sm" onclick="window.print()" type="button" title="Imprimir o Guardar como PDF" aria-label="Imprimir currículum">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>CV PDF</span>
+        </button>
+
+        <button class="btn-icon menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         Encabezado de la página
+         ========================================================================= -->
+    <header class="page-header">
+      <div class="container">
+        <span class="section-badge">Formación Académica</span>
+        <h1 class="page-title">Educación</h1>
+        <p class="page-subtitle">
+          Mi formación universitaria y áreas de estudio en la carrera de Ingeniería de Software.
+        </p>
+      </div>
+    </header>
+
+    <!-- =========================================================================
+         Timeline de Educación
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" style="text-align: left; margin-bottom: 36px;">
+          <h2 class="section-title" style="font-size: 1.75rem;">Educación Superior</h2>
+          <p class="section-subtitle" style="margin: 0;">Programa académico universitario en curso.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Programa académico: Ingeniería de Software -->
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2025 — Presente (En curso)</span>
+                <span class="timeline-institution">Universidad</span>
+              </div>
+              <h3 class="timeline-title">Ingeniería de Software</h3>
+              <p class="timeline-desc">
+                Inicié mis estudios de Ingeniería de Software en el año 2025. El programa brinda una sólida fundamentación en ciencias de la computación, lógica matemática, estructuras de datos, programación orientada a objetos y bases de datos.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Fundamentos de programación y algoritmos estructurados.</li>
+                <li>Programación Orientada a Objetos (POO): Clases, objetos, herencia y modularidad.</li>
+                <li>Estructuras de datos básicas y resolución lógica de problemas.</li>
+                <li>Diseño y consultas estructuradas en Bases de Datos Relacionales (SQL).</li>
+                <li>Maquetación web y estándares modernos con HTML5 y CSS3.</li>
+                <li>Control de versiones y gestión de proyectos con Git y GitHub.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Áreas de Aprendizaje
+         ========================================================================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Áreas de Estudio</span>
+          <h2 class="section-title">Pilares de Aprendizaje</h2>
+          <p class="section-subtitle">Competencias desarrolladas durante mi formación académica.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Pilar formativo 1 -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Maquetación & Diseño Web</h3>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 14px;">
+              Estructuración semántica de sitios web con HTML5, diseño responsivo con CSS3 (Flexbox y Grid) y JavaScript.
+            </p>
+            <div class="tags-list">
+              <span class="tag-badge">HTML5</span>
+              <span class="tag-badge">CSS3</span>
+              <span class="tag-badge">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Pilar formativo 2 -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3>Bases de Datos (SQL)</h3>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 14px;">
+              Modelado relacional de datos, creación de tablas, definición de llaves primarias/foráneas y consultas SQL.
+            </p>
+            <div class="tags-list">
+              <span class="tag-badge">Bases de Datos</span>
+              <span class="tag-badge">SQL</span>
+              <span class="tag-badge">Modelado ER</span>
+            </div>
+          </div>
+
+          <!-- Pilar formativo 3 -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3>Control de Versiones</h3>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 14px;">
+              Uso de Git para control de versiones en proyectos de programación y gestión de repositorios en GitHub.
+            </p>
+            <div class="tags-list">
+              <span class="tag-badge">Git</span>
+              <span class="tag-badge">GitHub</span>
+              <span class="tag-badge">VS Code</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner de navegación -->
+        <div class="cta-banner">
+          <h3>Conoce mis proyectos y experiencia</h3>
+          <p>Explora cómo aplico estos conocimientos en proyectos y prácticas.</p>
+          <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="experiencia.html" class="btn">Ver Experiencia →</a>
+            <a href="proyectos.html" class="btn" style="background: transparent; color: white; border: 1px solid white;">Ver Proyectos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+      Pie de página
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">Carlos<span>.dev</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="educacion.html">Educación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <p class="footer-copy">
+        &copy; 2026 Carlos — Hoja de Vida & Portafolio. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
