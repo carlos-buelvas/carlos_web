@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos — Portafolio de Proyectos</title>
+  <meta name="description" content="Proyectos de software y desarrollo web de Carlos. Sitios web responsivos, modelado de bases de datos SQL y algoritmos.">
+  <meta name="keywords" content="Proyectos, Portafolio, Carlos, HTML, CSS, JavaScript, SQL, POO">
+  <meta name="author" content="Carlos">
+  
+  <!-- Hojas de estilo globales -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Lógica principal -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- =========================================================================
+      Encabezado y barra de navegación fija
+       ========================================================================= -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Carlos.dev - Inicio">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        Carlos<span>.dev</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="educacion.html" class="nav-link">Educación</a></li>
+          <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
+          <li><a href="proyectos.html" class="nav-link active">Proyectos</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon" id="theme-toggle" type="button" aria-label="Cambiar tema claro u oscuro" title="Cambiar tema">
+          <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="7" r="4"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="btn btn-secondary btn-sm" onclick="window.print()" type="button" title="Imprimir o Guardar como PDF" aria-label="Imprimir currículum">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>CV PDF</span>
+        </button>
+
+        <button class="btn-icon menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         Encabezado de la página
+         ========================================================================= -->
+    <header class="page-header">
+      <div class="container">
+        <span class="section-badge">Portafolio</span>
+        <h1 class="page-title">Proyectos</h1>
+        <p class="page-subtitle">
+          Proyectos de desarrollo web, bases de datos relacionales y lógica de programación.
+        </p>
+      </div>
+    </header>
+
+    <!-- =========================================================================
+         Cuadrícula de proyectos
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="projects-grid">
+          <!-- Proyecto 1: sitio web y portafolio -->
+          <article class="project-card">
+            <div class="project-header-graphic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title">Sitio Web Personal Responsivo</h2>
+              <p class="project-description">
+                Sitio web multi-página estructurado con HTML5 semántico, diseño responsivo mediante Flexbox y CSS Grid, variables para modo claro/oscuro y JavaScript para interactividad.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Responsive Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: base de datos SQL -->
+          <article class="project-card">
+            <div class="project-header-graphic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title">Modelado & Consultas en Base de Datos (SQL)</h2>
+              <p class="project-description">
+                Diseño de esquema de base de datos relacional para un sistema de gestión. Incluye modelado entidad-relación, creación de tablas, llaves primarias/foráneas y consultas SQL estructuradas.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">SQL</span>
+                <span class="project-tag">Bases de Datos</span>
+                <span class="project-tag">Modelado ER</span>
+                <span class="project-tag">Consultas</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: lógica y programación orientada a objetos -->
+          <article class="project-card">
+            <div class="project-header-graphic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title">Algoritmos & Programación Orientada a Objetos</h2>
+              <p class="project-description">
+                Colección de ejercicios y módulos que aplican principios de POO (clases, encapsulamiento, métodos), estructuras de control y resolución de problemas algorítmicos.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">POO</span>
+                <span class="project-tag">Algoritmos</span>
+                <span class="project-tag">Lógica</span>
+                <span class="project-tag">Estructuras</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Proceso de Desarrollo
+         ========================================================================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Flujo de Trabajo</span>
+          <h2 class="section-title">Enfoque de Desarrollo</h2>
+          <p class="section-subtitle">Etapas clave en la realización de cada proyecto.</p>
+        </div>
+
+        <div class="about-highlights" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <div class="highlight-box">
+            <div class="highlight-icon">1</div>
+            <div class="highlight-content">
+              <h4>Análisis</h4>
+              <p>Comprensión del problema y requerimientos.</p>
+            </div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-icon">2</div>
+            <div class="highlight-content">
+              <h4>Diseño</h4>
+              <p>Modelado de datos y estructura visual.</p>
+            </div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-icon">3</div>
+            <div class="highlight-content">
+              <h4>Desarrollo</h4>
+              <p>Escritura de código limpio y control con Git.</p>
+            </div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-icon">4</div>
+            <div class="highlight-content">
+              <h4>Pruebas</h4>
+              <p>Verificación funcional y optimización.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner de contacto -->
+        <div class="cta-banner">
+          <h3>¿Quieres conversar sobre algún proyecto?</h3>
+          <p>Estoy disponible para consultas o proyectos de desarrollo.</p>
+          <a href="contacto.html" class="btn">Ir a Contacto →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+      Pie de página
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">Carlos<span>.dev</span></div>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="educacion.html">Educación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <p class="footer-copy">
+        &copy; 2026 Carlos — Hoja de Vida & Portafolio. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
